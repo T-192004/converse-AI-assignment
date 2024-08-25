@@ -1,0 +1,36 @@
+/* App.css */
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.App h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.App .components {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.App .components > * {
+  flex: 1;
+  min-width: 280px; /* Adjust based on component width */
+}
+
+@media (max-width: 768px) {
+  .App .components {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,65 @@
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    box-shadow: #dbe4e4 2px 3px 5px;
+    background-color: transparent;
+    position: relative;
+    top: 150px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reset-button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: 250px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .reset-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .reset-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly enlarge the button */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+  
+  .reset-button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .reset-button:active {
+    background-color: #8b1d1d;
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Reduce the shadow effect */
+  }
+  

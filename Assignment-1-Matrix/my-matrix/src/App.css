@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,212,255,0.3) 100%);
+}
+h1 {
+  color: hsl(47, 89%, 50%);
+  text-align: center;
+  font-size: 2.5em;
+  margin: 20px 0;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(184, 227, 248, 0.953);
+}
